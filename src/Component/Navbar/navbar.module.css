@@ -1,0 +1,46 @@
+.navbar{
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 35px;
+    z-index: 9;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar .container{
+    padding: 0 30px;
+}
+.navbar .container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.brand .styleBold{
+    font-weight: 800;
+    color: rgb(30, 202, 30);
+    font-size: 2rem;
+}
+.navbar__options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__options li{
+    padding: 0 1rem;
+}
+.navbar__options li a{
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: .3s ease-in;
+}
+
+.navbar__options li a:hover{
+    color: rgb(25, 190, 25);
+    border-bottom: 1px solid rgb(25, 190, 25);
+}

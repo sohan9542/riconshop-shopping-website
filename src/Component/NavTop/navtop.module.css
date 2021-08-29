@@ -1,0 +1,40 @@
+.NavTop
+{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: rgb(30, 202, 30);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.NavTop .container{
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.companyInfo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.companyInfo li{
+    padding: 8px 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.socialIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.socialIcon li{
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+}

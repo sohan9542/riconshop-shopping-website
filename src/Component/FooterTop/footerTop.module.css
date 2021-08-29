@@ -1,0 +1,58 @@
+.footerTop{
+    width: 100%;
+}
+.footerTop .container{
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.footerTop__left{
+    height: 100%;
+    background: #2e3348;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+.footerTop__left p{
+    font-style: italic;
+    font-size: 14px;
+}
+.footerTop__right{
+    height: 100%;
+}
+.footerTop__right img{
+    object-fit: cover;
+}
+.cuponform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cuponform input{
+    border: 2px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.cuponform button{
+    padding: 2px 8px;
+    border: 2px solid rgb(17, 132, 17);
+    background: rgb(17, 132, 17);;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease;
+    color:#fff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.cuponform button:hover{
+    border: 2px solid rgb(17, 132, 17);
+    background: none;
+    padding: 2px 8px;
+    color: rgb(29, 194, 29);
+}

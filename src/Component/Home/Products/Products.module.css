@@ -1,0 +1,11 @@
+.bestseller{
+    width: 100%;
+    padding-top: 20px;
+}
+.bestseller .container{
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: center;
+}
