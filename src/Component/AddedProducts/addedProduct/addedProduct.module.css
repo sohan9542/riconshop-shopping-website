@@ -22,3 +22,10 @@
     justify-content: space-around!important;
     width: 100%;
 }
+.products a{
+    color: #2e3348;
+    font-weight: 400;
+}
+.removeIcon{
+    cursor: pointer;
+}

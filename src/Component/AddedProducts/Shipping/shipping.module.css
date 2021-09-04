@@ -1,0 +1,16 @@
+.selectShipping{
+    width: 100%;
+    padding: 0px 10px;
+}
+.selectShipping > div{
+    margin: 10px 0;
+}
+.heading{
+    margin-top: -30px;
+}
+.country{
+    margin-top: 20px;
+}
+select{
+    width: 100%;
+}

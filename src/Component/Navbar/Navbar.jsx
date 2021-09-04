@@ -30,7 +30,7 @@ const NavbarHeader = () => {
                         </div>
                         <div className={classes.addToCart}>
                             <Badge badgeContent={allcard.length} color="secondary" style={{color: 'rgb(17, 172, 17)'}}>
-                                <Link to="/Added_Products"><ShoppingCartIcon /></Link>
+                                <Link to="/Added_Products" className={classes.shoppingIcon}><ShoppingCartIcon /></Link>
                             </Badge>
                         </div>
                     </div>

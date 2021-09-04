@@ -1,0 +1,48 @@
+.Review__description{
+    margin: 50px 0;
+}
+.headings{
+    display: flex;
+    align-items: center;
+}
+.headings h6{
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.changable__sections{
+    background: #e6f2e6;
+    padding: 30px;
+}
+.Descriptions p{
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: .9rem;
+}
+.review{
+    display: flex;
+    align-items: center;
+}
+.review__photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.review__photo img{
+    border-radius: 50%;
+
+}
+.review__description{
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.star{
+    display: flex;
+    align-items: center;
+    color: rgb(223, 90, 13);
+    margin-bottom: 10px;
+}
+.myReview{
+    margin: 50px 0;
+}

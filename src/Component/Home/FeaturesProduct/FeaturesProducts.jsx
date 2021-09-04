@@ -13,7 +13,7 @@ const FeaturesProducts = (props) => {
                     <p className={classes.styleTheme}>Newest Trends Top Brands</p>
                 </div>
                 <div className={classes.container}>
-                    {SliceProduct.map(pd => <Product handleProduct={props.handleProduct} product={pd} key={pd.id}/>)}
+                    {SliceProduct.map(pd => <Product handleProduct={props.handleProduct}  product={pd} key={pd.id}/>)}
                 </div>
             </section>
         </>

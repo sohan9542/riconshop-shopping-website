@@ -17,7 +17,7 @@ const Products = (props) => {
                             um. Nam sequi, voluptatem placeat mollitia doloribus tenetur tempora!</p>
                     </div>
                     {
-                        bestSeller.map(pd => <Product handleProduct={props.handleProduct} product={pd} key={pd.id} />)
+                        bestSeller.map(pd => <Product handleProduct={props.handleProduct}  product={pd} key={pd.id} />)
                     }
                 </div>
             </section>

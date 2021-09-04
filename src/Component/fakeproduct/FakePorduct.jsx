@@ -1,4 +1,4 @@
-import { XDiamondFill } from "react-bootstrap-icons"
+
 export const fakeProducts = [
     {
         id: 1,
@@ -8,7 +8,8 @@ export const fakeProducts = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLiS31LSPmMASUpUG1zz3yMcgS5XZCX2WPSuYYCne6miG1Cpde4oIdmdouQnR-NEcWPc&usqp=CAU',
         star: '4',
         seller: 'best',
-        categories: 'shoes'
+        categories: 'shoes',
+        color:'white'
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ export const fakeProducts = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExxINMMZ9CngRpn5fhdkrUu9ZgEI02Pr7shqinb8dqqqDlrpsZMeyQhResDx4McqGRuA&usqp=CAU',
         star: '4',
         seller: '',
-        categories: 'shoes'
+        categories: 'shoes',
+        color:'black'
     },
     {
         id: 3,
@@ -28,7 +30,8 @@ export const fakeProducts = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4hcDGSIe7MI1ojXAgbpVDQ_YZtXzAlL2bLy9rS2A-Y8jUlDbZo3VG0IOplDsfFYFi3vc&usqp=CAU',
         star: '5',
         seller: '',
-        categories: 'shoes'
+        categories: 'shoes',
+        color: 'red'
     },
     {
         id: 4,
@@ -39,6 +42,7 @@ export const fakeProducts = [
         star: '5',
         seller: '',
         categories: 'shoes'
+        ,color: 'blue'
     },
     {
         id: 5,
@@ -49,6 +53,7 @@ export const fakeProducts = [
         star: '5',
         seller: '',
         categories: 't-shirt'
+        ,color:'blue'
     },
     {
         id: 6,
@@ -59,6 +64,7 @@ export const fakeProducts = [
         star: '5',
         seller: 'best',
         categories: 't-shirt'
+        ,color:'pink'
     },
     {
         id: 7,
@@ -69,6 +75,7 @@ export const fakeProducts = [
         star: '5',
         seller: '',
         categories: 't-shirt'
+        ,color:'yallow'
     },
     {
         id: 8,
@@ -79,6 +86,8 @@ export const fakeProducts = [
         star: '5',
         seller: '',
         categories: 't-shirt'
+        ,color: 'green'
+        
     },
     {
         id: 9,
@@ -190,3 +199,55 @@ export const qualityProduct = [
         theme: 'Shop Big Save Big'
     },
 ]
+
+export const Country = [
+    'Asia',
+    'Arab'
+]
+export const States = 
+    {
+        Asia: [
+            'Bangladesh',
+            'Pakisthan',
+            'India'
+        ],
+        Arab: [
+            'Saudi',
+            'Iran',
+            'Mishor'
+        ]
+    }
+
+export const City =
+{
+    Bangladesh: [
+        'Dhaka',
+        'Rajshahi',
+        'Chittagong'
+    ],
+    India: [
+        'Mumbai',
+        'Delhi',
+        'Rajethan'
+    ],
+    Pakisthan: [
+        'Kabul',
+        'Islamabad'
+    ]
+    ,
+    Saudi: [
+        'Makka',
+        'Madina',
+    ],
+    Iran: [
+        'Kabul',
+        'Abul',
+        'Chanbul'
+    ],
+    Mishor: [
+        'Bolod',
+        'Ghaja'
+    ]
+
+}
+

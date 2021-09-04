@@ -1,0 +1,121 @@
+.productdetails{
+    margin-top: 150px;
+    width: 100%;
+}
+.productdetails .container{
+    padding: 0 30px;
+}
+.name__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+.product__img{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 10px;
+}
+.big__img{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.small__img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    padding: 20px;
+}
+.product__description{
+    width: 100%;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+.price__stars{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+.price__stars h3{
+    color: rgb(17, 132, 17);
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+    color: rgb(226, 108, 29);
+}
+.product__description p{
+    font-size: 14px;
+    letter-spacing: .9px;
+    padding: 10px 0; 
+}
+.selectColors__size{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+select{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+}
+.color{
+    margin-left: 50px;
+}
+option{
+    font-weight: 400;
+}
+.selectColors__size{
+    padding: 20px 0;
+}
+.quantity{
+    margin: 20px 0;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.design{
+    padding: 8px 10px;
+    color: white;
+    background: rgb(17, 132, 17);
+    transition: .2s ease;
+    border: 1px solid rgb(17, 132, 17);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.design:hover{
+    background: none;
+    color: rgb(17, 132, 17);
+}
+.quantityCount{
+    padding: 8px 10px;
+    margin-bottom: 0;
+}
+.addToCart__love button{
+    padding: .8rem 1rem;
+    background: rgb(17, 132, 17);
+    border: 1px solid rgb(17, 132, 17);
+    transition: .2s ease;
+    color: white;
+}
+.addToCart__love button:hover{
+    background: none;
+    color: rgb(17, 132, 17);
+}
+.heart{
+    margin-left: 50px;
+}
+.review{
+    width: 100%;
+}
+.related__products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

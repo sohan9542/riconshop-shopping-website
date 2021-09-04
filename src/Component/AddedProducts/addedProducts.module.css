@@ -37,13 +37,17 @@
     padding-bottom: 50px;
 }
 .ConitinueShopping{
-    margin-top: 25px;
+    margin-top: 35px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .ConitinueShopping h6 a{
-    color: rgb(17, 132, 17);
+    color: white;
     border: 2px solid rgb(17, 132, 17);
-    padding: 5px;
+    background: rgb(17, 132, 17);
+    padding: 8px 1rem;
     text-align: center;
     transition: .2s ease;
 }
@@ -51,6 +55,83 @@
     text-align: center;
 }
 .ConitinueShopping h6 a:hover{
+    color: rgb(17, 132, 17);
+    background: none;
+
+}
+.cuponContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.use h6{
+    letter-spacing: 1px;
+    
+}
+.use input{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding: 8px;
+}
+.input button{
+    border: 1px solid rgb(17, 132, 17);
+    background: rgb(17, 132, 17);
+    transition: .2s ease;
+    padding: 8px 1rem;
+    margin-left: 20px;
     color: white;
-    background-color: rgb(17, 132, 17);
+}
+.input button:hover{
+    background: none;
+    color: rgb(17, 132, 17);
+}
+.shiping_checkout{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   margin-top: 100px;
+   gap: 50px;
+}
+.calcu{
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;;
+    flex-direction: column;
+}
+.subtotal{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.money{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.total{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.checkout{
+    background: rgb(17, 132, 17);
+    border: 1px solid rgb(17, 132, 17);
+    padding: .6rem 1rem;
+    color: white;
+    transition: .2s ease;
+}
+.checkout:hover{
+    background: none;
+    color: rgb(17, 132, 17);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
