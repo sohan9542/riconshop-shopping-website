@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import classes from './navbar.module.css';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import Badge from '@material-ui/core/Badge';
 import { useContext } from 'react';
 import { RapperContent } from '../../App';
 
 
 const NavbarHeader = () => {
-    const allcard = useContext(RapperContent)
+    const {selectProduct, wishProduct} = useContext(RapperContent)
     return (
         <>
             <section className={classes.navbar}>
@@ -23,14 +24,14 @@ const NavbarHeader = () => {
                                 <li><Link to='/categories'>Сategories</Link></li>
                                 <li><Link to='/contact'>Contact</Link></li>
                                 <li><Link to='/login'>login</Link></li>
-                                <li className={classes.signup}>
-                                    <Link to='/signup'>Sign up</Link>
-                                </li>
                             </ul>
                         </div>
                         <div className={classes.addToCart}>
-                            <Badge badgeContent={allcard.length} color="secondary" style={{color: 'rgb(17, 172, 17)'}}>
-                                <Link to="/Added_Products" className={classes.shoppingIcon}><ShoppingCartIcon /></Link>
+                            <Badge badgeContent={selectProduct.length} color="secondary" style={{color: 'rgb(17, 172, 17)'}}>
+                                <Link to="/addedProducts" className={classes.shoppingIcon}><ShoppingCartIcon /></Link>
+                            </Badge>
+                            <Badge badgeContent={wishProduct.length} color="secondary" style={{color: 'rgb(17, 172, 17)', marginLeft:'10px'}}>
+                                <Link to="/wishList" className={classes.shoppingIcon}><FavoriteIcon /></Link>
                             </Badge>
                         </div>
                     </div>

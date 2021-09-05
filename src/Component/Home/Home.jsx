@@ -10,10 +10,10 @@ const Home = (props) => {
     return (
         <>
             <Hero/>
-            <Products handleProduct={props.handleProduct}/>
+            <Products handleProduct={props.handleProduct} handleWishList={props.handleWishList}/>
             <Qualitys />
             <Offer />
-            <FeaturesProducts handleProduct={props.handleProduct}/>
+            <FeaturesProducts handleProduct={props.handleProduct} handleWishList={props.handleWishList}/>
             <FooterTop />
         </>
     )

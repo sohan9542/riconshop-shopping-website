@@ -1,0 +1,90 @@
+.signup{
+    margin-top: 120px;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+}
+.location a{
+    color: rgb(27, 25, 46);
+    font-weight: 400;
+}
+.location a:hover{
+    color: rgb(17, 132, 17);
+}
+.icon{
+    margin: 0 10px;
+}
+.active{
+    color: rgb(17, 132, 17);
+    font-weight: 500;
+}
+.location{
+    margin-bottom: 10px;
+}
+.signupContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    background-image: url('../../image//signup.jpg');
+    background-size: cover;
+}
+.signupContainer form{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 40px;
+    border-top: 15px solid rgb(17, 132, 17)!important;
+    border: 1px solid rgb(17, 132, 17);
+    background: white;
+
+}
+.signupContainer form label{
+    font-weight: 400;
+}
+.signupContainer form input{
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.signupContainer form button{
+    border: 1px solid rgb(17, 132, 17);
+    background: rgb(17, 132, 17);
+    padding: 8px;
+    color:white;
+    margin-top: 10px;
+    transition: .2s ease;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.signupContainer form button:hover{
+    background: rgba(17, 132, 17, 0.722);
+    color: white;
+}
+.signupContainer form p{
+    font-size: 14px;
+}
+.signupContainer form p a{
+    color: rgb(17, 132, 17);
+    text-decoration: 1px solid rgb(17, 132, 17);
+    margin-top: 10px;
+}
+.signupContainer form p a:hover{
+    color: rgb(17, 132, 17);
+}
+.signupWithGogle{
+    width: 100%;
+    border-top: 1px solid rgba(17, 132, 17, 0.522);
+}
+.signupWithGogle button{
+    width: 100%;
+}

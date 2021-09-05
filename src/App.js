@@ -13,6 +13,11 @@ import { createContext } from 'react'
 import AddedProducts from "./Component/AddedProducts/AddedProducts";
 import ProductDetails from "./Component/ProductDetails/ProductDetails";
 import Category from "./Component/Category/Category";
+import Wishlist from "./Component/Wishlist/Wishlist";
+import Contact from "./Component/Contact/Contact";
+import Login from "./Component/LogIn/Login";
+import Signup from './Component/SignUp/Signup.jsx'
+
 export const RapperContent = createContext()
 
 
@@ -21,8 +26,10 @@ export const RapperContent = createContext()
 function App() {
 
 
-
+  const [wishProduct, setWishProduct] = useState([])
   const [selectProduct, setSelectProduct] = useState([])
+
+  // selected functions
   const handleProduct = (product) => {
     const add__Another_ID = {
       ...product
@@ -39,29 +46,50 @@ function App() {
     setSelectProduct([])
   }
 
-
+  // wishes functions
+  const removeAllwishes = () => {
+    setWishProduct([])
+  }
+  const handleWishRemove = (e) => {
+    const filterProduct = wishProduct.filter(pd => pd.id !== e)
+    setWishProduct(filterProduct)
+  }
+  const handleWishList = (product) => {
+    const newWishtlist = [...wishProduct, product]
+    setWishProduct(newWishtlist)
+  }
 
 
 
   return (
-    <RapperContent.Provider value={selectProduct}>
+    <RapperContent.Provider value={{ selectProduct, wishProduct }}>
       <Router>
         <NavTop />
         <NavbarHeader />
-
-
         <Switch>
           <Route exact path='/'>
-            <Home handleProduct={handleProduct} />
+            <Home handleProduct={handleProduct} handleWishList={handleWishList} />
           </Route>
-          <Route exact path='/Added_Products' >
+          <Route exact path='/addedProducts' >
             <AddedProducts handleRemove={handleRemove} removeAll={removeAll} />
           </Route>
           <Route path="/description/:id">
-            <ProductDetails handleProduct={handleProduct} />
+            <ProductDetails handleProduct={handleProduct} handleWishList={handleWishList} />
           </Route>
           <Route path='/categories'>
             <Category />
+          </Route>
+          <Route path="/wishList">
+            <Wishlist removeAllwishes={removeAllwishes} handleProduct={handleProduct} handleWishRemove={handleWishRemove} />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signup">
+            <Signup />
           </Route>
         </Switch>
         <Footer />

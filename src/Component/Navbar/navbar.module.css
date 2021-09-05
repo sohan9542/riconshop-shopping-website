@@ -30,6 +30,17 @@
     align-items: center;
     justify-content: center;
 }
+.signup{
+    padding: 15px;
+    border-radius: 16px;
+    background: rgb(17, 167, 17);
+    color: white;
+
+}
+.signup a{
+    color: white!important;
+    text-decoration: none!important;
+}
 .navbar__options li{
     padding: 0 1rem;
 }

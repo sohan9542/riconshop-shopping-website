@@ -1,0 +1,78 @@
+.wish__list{
+    margin-top: 150px;
+    width: 100%;
+}
+.container{
+    padding: 0 30px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.location a{
+    color: rgb(27, 25, 46);
+    font-weight: 400;
+}
+.location a:hover{
+    color: rgb(17, 132, 17);
+}
+.icon{
+    margin: 0 10px;
+}
+.active{
+    color: rgb(17, 132, 17);
+    font-weight: 500;
+}
+.noData{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(17, 132, 17, 0.1);
+}
+.table{
+    min-height: 429px;
+    padding-bottom: 50px;
+}
+.tableHeader ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.tableHeader ul li{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+}
+.ConitinueShopping{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ConitinueShopping h6 a{
+    color: white;
+    border: 2px solid rgb(17, 132, 17);
+    background: rgb(17, 132, 17);
+    padding: 8px 1rem;
+    text-align: center;
+    transition: .2s ease;
+}
+.ConitinueShopping h6{
+    text-align: center;
+}
+.ConitinueShopping h6 a:hover{
+    color: rgb(17, 132, 17);
+    background: none;
+
+}

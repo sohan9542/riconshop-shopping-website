@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 const Product = (props) => {
     const { img, name, id, price } = props.product;
     const handleProduct = props.handleProduct;
+    const handleWishList = props.handleWishList;
     return (
         <>
             <div className={classes.card}>
@@ -15,7 +16,7 @@ const Product = (props) => {
                     <img src={img} alt="" />
                     <div className={classes.addToCart}>
                         <ul>
-                            <li><AiFillHeart /></li>
+                            <li onClick={()=> handleWishList(props.product)}><AiFillHeart /></li>
                             <li onClick={()=> handleProduct(props.product)}><FaCartPlus /></li>
                             <li><Link to={'/description/' + id}><MdDescription /></Link></li>
 

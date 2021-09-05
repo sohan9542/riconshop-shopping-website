@@ -5,13 +5,13 @@ import classes from './addedProducts.module.css'
 import AddedProduct from './addedProduct/AddedProduct'
 import { Link } from 'react-router-dom'
 import Shipping from './Shipping/Shipping';
-
+import {AiOutlineDoubleRight} from 'react-icons/ai'
 const AddedProducts = (props) => {
     console.log(props);
-    const addedData = useContext(RapperContent)
-    const uniqueObjects = [...new Map(addedData.map(item => [item.id, item])).values()]
+    const { selectProduct } = useContext(RapperContent)
+    const uniqueObjects = [...new Map(selectProduct.map(item => [item.id, item])).values()]
     let arr = []
-    addedData.forEach((e) => {
+    selectProduct.forEach((e) => {
         arr = [...arr, e.price]
     })
     const price = arr.reduce((total, num) => total + num, 0)
@@ -19,6 +19,11 @@ const AddedProducts = (props) => {
         <>
             <section className={classes.addedProduct}>
                 <div className={classes.container}>
+                    <div className={classes.location}>
+                        <li><Link to='/'>Home</Link></li>
+                        <AiOutlineDoubleRight className={classes.icon} />
+                        <li className={classes.active}>Added Products</li>
+                    </div>
                     {uniqueObjects.length === 0 ?
 
                         <div className={classes.noData}>

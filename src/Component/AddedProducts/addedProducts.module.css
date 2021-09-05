@@ -59,6 +59,25 @@
     background: none;
 
 }
+.active{
+    color: rgb(17, 132, 17);
+    font-weight: 400  ;
+}
+.location{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.location a{
+    color: rgb(27, 25, 46);
+    font-weight: 400;
+}
+.location a:hover{
+    color: rgb(17, 132, 17);
+}
+.icon{
+    margin: 0 10px;
+}
 .cuponContainer{
     display: flex;
     align-items: center;

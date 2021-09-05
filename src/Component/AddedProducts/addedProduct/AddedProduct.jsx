@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import { FaMinusCircle } from 'react-icons/fa';
 const AddedProduct = (props) => {
     const { id, img, name, price,  categories } = props.product;
-    const addedData = useContext(RapperContent);
-    const quantity = addedData.filter(pd => pd.name === name)
+    const {selectProduct} = useContext(RapperContent);
+    const quantity = selectProduct.filter(pd => pd.name === name)
     return (
         <>
             <ul className={classes.singleProduct}>
