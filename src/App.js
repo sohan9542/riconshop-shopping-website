@@ -17,12 +17,9 @@ import Wishlist from "./Component/Wishlist/Wishlist";
 import Contact from "./Component/Contact/Contact";
 import Login from "./Component/LogIn/Login";
 import Signup from './Component/SignUp/Signup.jsx'
+import Sidebar from './Component/Sidebar/Sidebar.jsx'
 
 export const RapperContent = createContext()
-
-
-
-
 function App() {
 
 
@@ -59,13 +56,16 @@ function App() {
     setWishProduct(newWishtlist)
   }
 
-
-
+  const [show, setShow] = React.useState(false)
+  const [isLogIn, setIsLogIn] = useState(false)
+  const [useInfo, setUserInfo ] = useState({})
+  const [isSignOut, setIsSignOut] = useState(false)
   return (
     <RapperContent.Provider value={{ selectProduct, wishProduct }}>
       <Router>
         <NavTop />
-        <NavbarHeader />
+        <NavbarHeader show={show} setShow={setShow} isLogIn={isLogIn} useInfo={useInfo}/>
+        <Sidebar show={show} isLogIn={isLogIn} setIsLogIn={setIsLogIn} useInfo={useInfo} setUserInfo={setUserInfo} isSignOut={isSignOut} setIsSignOut={setIsSignOut}/>
         <Switch>
           <Route exact path='/'>
             <Home handleProduct={handleProduct} handleWishList={handleWishList} />
@@ -86,7 +86,7 @@ function App() {
             <Contact />
           </Route>
           <Route path="/login">
-            <Login />
+            <Login isLogIn={isLogIn} setIsLogIn={setIsLogIn} useInfo={useInfo} setUserInfo={setUserInfo} isSignOut={isSignOut} setIsSignOut={setIsSignOut}/>
           </Route>
           <Route path="/signup">
             <Signup />

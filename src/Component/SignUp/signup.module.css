@@ -88,3 +88,15 @@
 .signupWithGogle button{
     width: 100%;
 }
+.success{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    background: white;
+    justify-content: center;
+    margin: 100px 0;
+    padding: 100px ;
+}
+.success img{
+    width: 100px;
+}

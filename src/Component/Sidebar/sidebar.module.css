@@ -1,0 +1,72 @@
+.sidebar{
+    z-index: 999999;
+    background: rgb(30,202,30, 0.79);
+    right: 0;
+    bottom: 0;
+    width: 300px!important;
+    height: 100%;
+    top: 123px;
+    position: fixed;
+    transition: .3s ease-in-out;
+    padding: 20px;
+}
+.logedInUser img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logedInUser{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.sidebarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user__image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user__info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: white;
+}
+.sidebar__options{
+    margin-top: 50px;
+}
+.sidebar__options ul li{
+    padding: 5px 0;
+}
+.sidebar__options ul li a{
+    color: white;
+    transition: .2s ease;
+}
+.sidebar__options ul li a:hover{
+    color: rgb(25, 22, 58);
+}
+.log{
+    margin-top: 50px;
+}
+.log li{
+    width: 100px;
+    margin: 15px 0;
+}
+.log  li a{
+    color: white;
+    transition: .2s ease;
+    padding: 5px 10px;
+
+}
+.log li a:hover{
+    color:rgb(25, 22, 58);
+}

@@ -3,19 +3,22 @@
     width: 100%;
     align-items: center;
     display: flex;
-    background-color: rgb(30, 202, 30);
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
 }
-
 .NavTop .container{
+    width: 100%;
+}
+.NavTop .navtop__info{
     width: 100%;
     padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(30, 202, 30);
 }
 .companyInfo{
     display: flex;
@@ -38,3 +41,8 @@
     cursor: pointer;
     font-size: 14px;
 }
+.loginOrLogOutInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}                       
